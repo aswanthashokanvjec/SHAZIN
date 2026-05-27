@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eid Mubarak — A Special Surprise From Shazin</title>
+  <meta name="description" content="A heartfelt Eid Mubarak surprise from Shazin to his beloved family. May this Eid bring peace, happiness, and endless blessings." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════════
+       GLOBAL SVG DEFINITIONS
+       ═══════════════════════════════════════════════════ -->
+  <svg style="position:absolute;width:0;height:0;overflow:hidden;" aria-hidden="true">
+    <defs>
+      <linearGradient id="moonGradIntro" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#ffffff" />
+        <stop offset="40%" stop-color="#fff0ca" />
+        <stop offset="80%" stop-color="#f5ce62" />
+        <stop offset="100%" stop-color="#b8860b" />
+      </linearGradient>
+      <linearGradient id="goldCapGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#fff3d1" />
+        <stop offset="50%" stop-color="#d4a843" />
+        <stop offset="100%" stop-color="#7a550d" />
+      </linearGradient>
+      <radialGradient id="glassGlow" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="#fffdf7" stop-opacity="1" />
+        <stop offset="40%" stop-color="#fbe49d" stop-opacity="0.8" />
+        <stop offset="100%" stop-color="#d4a843" stop-opacity="0.1" />
+      </radialGradient>
+      <linearGradient id="mosqueGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#02140c" stop-opacity="0.9" />
+        <stop offset="60%" stop-color="#010d08" stop-opacity="0.98" />
+        <stop offset="100%" stop-color="#000000" stop-opacity="1" />
+      </linearGradient>
+      <filter id="glow">
+        <feGaussianBlur stdDeviation="4" result="blur" />
+        <feComposite in="SourceGraphic" in2="blur" operator="over" />
+      </filter>
+      <filter id="softGlow">
+        <feGaussianBlur stdDeviation="6" result="blur" />
+        <feComposite in="SourceGraphic" in2="blur" operator="over" />
+      </filter>
+      <!-- Ornamental arch path for section dividers -->
+      <linearGradient id="archGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="transparent" />
+        <stop offset="30%" stop-color="#d4a843" stop-opacity="0.5" />
+        <stop offset="50%" stop-color="#fbe49d" stop-opacity="0.8" />
+        <stop offset="70%" stop-color="#d4a843" stop-opacity="0.5" />
+        <stop offset="100%" stop-color="transparent" />
+      </linearGradient>
+    </defs>
+    <g id="lantern-def">
+      <line x1="50" y1="0" x2="50" y2="35" stroke="url(#goldCapGrad)" stroke-width="2" />
+      <circle cx="50" cy="38" r="5" fill="url(#goldCapGrad)" />
+      <path d="M30,55 C30,35 70,35 70,55 L75,65 L25,65 Z" fill="url(#goldCapGrad)" />
+      <path d="M25,65 L32,125 L68,125 L75,65 Z" fill="url(#glassGlow)" stroke="url(#goldCapGrad)" stroke-width="1.5" />
+      <path d="M40,65 L44,125 M50,65 L50,125 M60,65 L56,125" stroke="url(#goldCapGrad)" stroke-width="1" opacity="0.5" />
+      <path d="M27,85 Q50,105 73,85 M29,105 Q50,125 71,105" fill="none" stroke="url(#goldCapGrad)" stroke-width="1.2" opacity="0.4" />
+      <path d="M27,125 L73,125 L65,138 L35,138 Z" fill="url(#goldCapGrad)" />
+      <path d="M45,138 L50,150 L55,138 Z" fill="url(#goldCapGrad)" />
+    </g>
+    <g id="medallion-def">
+      <rect x="25" y="25" width="50" height="50" fill="none" stroke="url(#goldCapGrad)" stroke-width="2" />
+      <rect x="25" y="25" width="50" height="50" fill="none" stroke="url(#goldCapGrad)" stroke-width="2" transform="rotate(45 50 50)" />
+      <circle cx="50" cy="50" r="18" fill="none" stroke="url(#goldCapGrad)" stroke-width="1.5" />
+      <path d="M50,15 L50,85 M15,50 L85,50" stroke="url(#goldCapGrad)" stroke-width="1" opacity="0.4" />
+      <circle cx="50" cy="50" r="7" fill="url(#goldCapGrad)" />
+    </g>
+    <g id="sparkle-star">
+      <path d="M20,0 L24,14 L38,20 L24,26 L20,40 L16,26 L2,20 L16,14 Z" fill="url(#goldCapGrad)" />
+    </g>
+    <g id="prayer-hands">
+      <path d="M35,65 Q45,25 48,15 Q50,10 52,15 Q55,25 65,65 Q60,75 50,85 Q40,75 35,65 Z" fill="none" stroke="url(#goldCapGrad)" stroke-width="2" />
+      <path d="M50,15 L50,85" stroke="url(#goldCapGrad)" stroke-width="1.5" stroke-dasharray="2,2" />
+    </g>
+  </svg>
+
+  <!-- ═══════════════════════════════════════════════════
+       INTRO OVERLAY — Cinematic Opening Experience
+       ═══════════════════════════════════════════════════ -->
+  <div id="intro-overlay">
+    <!-- Cinematic Letterbox Bars -->
+    <div class="letterbox letterbox-top"></div>
+    <div class="letterbox letterbox-bottom"></div>
+
+    <canvas id="intro-canvas"></canvas>
+    
+    <!-- Shooting Stars Container -->
+    <div id="shooting-stars-container"></div>
+
+    <div id="intro-content">
+      <!-- Premium Glowing Crescent Moon with Light Rays -->
+      <div id="intro-moon">
+        <div class="moon-glow"></div>
+        <div class="moon-rays">
+          <div class="ray ray-1"></div>
+          <div class="ray ray-2"></div>
+          <div class="ray ray-3"></div>
+          <div class="ray ray-4"></div>
+          <div class="ray ray-5"></div>
+          <div class="ray ray-6"></div>
+          <div class="ray ray-7"></div>
+          <div class="ray ray-8"></div>
+        </div>
+        <svg viewBox="0 0 100 100" class="moon-svg-asset" aria-hidden="true">
+          <path d="M72,22 A40,40 0 1,0 72,78 A32,32 0 1,1 72,22 Z" fill="url(#moonGradIntro)" />
+        </svg>
+      </div>
+
+      <div id="intro-stars"></div>
+
+      <!-- Premium Floating Lantern SVGs -->
+      <div id="intro-lanterns">
+        <div class="lantern lantern-1">
+          <svg viewBox="0 0 100 160" class="lantern-svg-asset" aria-hidden="true"><use href="#lantern-def"/></svg>
+        </div>
+        <div class="lantern lantern-2">
+          <svg viewBox="0 0 100 160" class="lantern-svg-asset" aria-hidden="true"><use href="#lantern-def"/></svg>
+        </div>
+        <div class="lantern lantern-3">
+          <svg viewBox="0 0 100 160" class="lantern-svg-asset" aria-hidden="true"><use href="#lantern-def"/></svg>
+        </div>
+        <div class="lantern lantern-4">
+          <svg viewBox="0 0 100 160" class="lantern-svg-asset" aria-hidden="true"><use href="#lantern-def"/></svg>
+        </div>
+        <div class="lantern lantern-5">
+          <svg viewBox="0 0 100 160" class="lantern-svg-asset" aria-hidden="true"><use href="#lantern-def"/></svg>
+        </div>
+      </div>
+
+      <!-- Cinematic Heading text -->
+      <h1 id="intro-text" class="intro-hidden">
+        <span class="intro-line intro-line-1"><span class="stars-sparkle">✦</span> A Special Eid Surprise <span class="stars-sparkle">✦</span></span>
+        <span class="intro-line intro-line-2">From <span class="gold-shimmer">Shazin</span></span>
+      </h1>
+      <button id="enter-btn" class="intro-hidden">
+        <span class="btn-pulse-ring"></span>
+        Enter the Celebration
+      </button>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════
+       MAIN WEBSITE
+       ═══════════════════════════════════════════════════ -->
+  <main id="main-site" class="hidden">
+
+    <!-- Container for Three.js 3D Background Particles -->
+    <div id="three-container"></div>
+
+    <!-- Shooting Stars (Main Site) -->
+    <div id="main-shooting-stars"></div>
+
+    <!-- Parallax Mosque Silhouette -->
+    <div id="mosque-parallax-container">
+      <svg id="mosque-silhouette" viewBox="0 0 1200 250" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0,250 L0,170 Q30,175 40,140 L40,100 C40,70 60,70 60,100 L60,140 Q70,175 110,170 L110,120 Q110,60 160,30 Q210,60 210,120 L210,170 L260,170 Q300,175 310,140 L310,100 C310,70 330,70 330,100 L330,140 Q340,175 380,170 L380,90 Q380,20 430,0 Q480,20 480,90 L480,170 L530,170 L530,110 C530,80 550,80 550,110 L550,170 L600,170 Q640,175 650,140 L650,100 C650,70 670,70 670,100 L670,140 Q680,175 720,170 L720,110 Q720,40 770,10 Q820,40 820,110 L820,170 L870,170 Q910,175 920,140 L920,100 C920,70 940,70 940,100 L940,140 Q950,175 990,170 L990,130 Q990,70 1040,40 Q1090,70 1090,130 L1090,170 L1200,170 L1200,250 Z" fill="url(#mosqueGrad)" />
+        <circle cx="160" cy="80" r="3" fill="#fbe49d" opacity="0.8" filter="url(#glow)" />
+        <circle cx="430" cy="55" r="4" fill="#fbe49d" opacity="0.9" filter="url(#glow)" />
+        <circle cx="770" cy="65" r="3.5" fill="#fbe49d" opacity="0.85" filter="url(#glow)" />
+        <circle cx="1040" cy="85" r="3" fill="#fbe49d" opacity="0.8" filter="url(#glow)" />
+      </svg>
+    </div>
+
+    <!-- Soft Cloud/Fog Layers -->
+    <div id="sky-clouds" aria-hidden="true">
+      <div class="cloud cloud-1"></div>
+      <div class="cloud cloud-2"></div>
+      <div class="cloud cloud-3"></div>
+    </div>
+
+    <!-- Floating Background Lanterns -->
+    <div id="floating-lanterns-bg">
+      <div class="bg-lantern bl-1"><svg viewBox="0 0 100 160" class="lantern-svg-asset" aria-hidden="true"><use href="#lantern-def"/></svg></div>
+      <div class="bg-lantern bl-2"><svg viewBox="0 0 100 160" class="lantern-svg-asset" aria-hidden="true"><use href="#lantern-def"/></svg></div>
+      <div class="bg-lantern bl-3"><svg viewBox="0 0 100 160" class="lantern-svg-asset" aria-hidden="true"><use href="#lantern-def"/></svg></div>
+      <div class="bg-lantern bl-4"><svg viewBox="0 0 100 160" class="lantern-svg-asset" aria-hidden="true"><use href="#lantern-def"/></svg></div>
+      <div class="bg-lantern bl-5"><svg viewBox="0 0 100 160" class="lantern-svg-asset" aria-hidden="true"><use href="#lantern-def"/></svg></div>
+      <div class="bg-lantern bl-6"><svg viewBox="0 0 100 160" class="lantern-svg-asset" aria-hidden="true"><use href="#lantern-def"/></svg></div>
+    </div>
+
+    <div id="geometric-pattern"></div>
+
+    <!-- Premium Islamic Border Frame -->
+    <div id="border-frame-overlay" aria-hidden="true">
+      <div class="frame-corner tl"></div>
+      <div class="frame-corner tr"></div>
+      <div class="frame-corner bl"></div>
+      <div class="frame-corner br"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="main-nav">
+      <a href="#hero" class="nav-link active">Home</a>
+      <a href="#duas-section" class="nav-link">Duas</a>
+      <a href="#family-message" class="nav-link">Message</a>
+      <a href="#blessings-section" class="nav-link">Blessings</a>
+    </nav>
+
+    <!-- ─── HERO SECTION ─── -->
+    <section id="hero">
+      <div class="hero-content">
+        <div class="hero-moon-decor">
+          <div class="moon-glow hero-moon-glow"></div>
+          <div class="moon-rays">
+            <div class="ray ray-1"></div>
+            <div class="ray ray-2"></div>
+            <div class="ray ray-3"></div>
+            <div class="ray ray-4"></div>
+          </div>
+          <svg viewBox="0 0 100 100" class="moon-svg-asset" aria-hidden="true">
+            <path d="M72,22 A40,40 0 1,0 72,78 A32,32 0 1,1 72,22 Z" fill="url(#moonGradIntro)" filter="url(#glow)" />
+          </svg>
+        </div>
+
+        <p class="hero-bismillah">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</p>
+        <h1 class="hero-title" id="hero-title">Eid Mubarak</h1>
+        <h2 class="hero-arabic" id="hero-arabic">عيد مبارك</h2>
+
+        <div class="hero-divider">
+          <svg viewBox="0 0 40 40" class="star-sparkle-svg"><use href="#sparkle-star"/></svg>
+          <span class="divider-line"></span>
+          <svg viewBox="0 0 40 40" class="star-sparkle-svg"><use href="#sparkle-star"/></svg>
+        </div>
+
+        <p class="hero-subtitle">May this blessed day bring joy, peace, and prosperity to your hearts</p>
+
+        <div class="hero-scroll-indicator">
+          <span>Scroll to explore</span>
+          <div class="scroll-arrow">↓</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── Ornamental Arch Divider ─── -->
+    <div class="section-divider" aria-hidden="true">
+      <svg viewBox="0 0 600 60" preserveAspectRatio="none" class="arch-divider-svg">
+        <path d="M0,58 L200,58 Q300,2 400,58 L600,58" fill="none" stroke="url(#archGrad)" stroke-width="1.5" />
+        <circle cx="300" cy="8" r="4" fill="url(#goldCapGrad)" filter="url(#glow)" />
+      </svg>
+    </div>
+
+    <!-- ─── DUAS SECTION ─── -->
+    <section id="duas-section">
+      <div class="section-header">
+        <span class="section-icon">
+          <svg viewBox="0 0 100 100" class="medallion-svg-asset"><use href="#medallion-def"/></svg>
+        </span>
+        <h2 class="section-title">Sacred Duas &amp; Prayers</h2>
+        <p class="section-subtitle">Beautiful supplications for this blessed occasion</p>
+      </div>
+      <div class="duas-grid">
+        <div class="dua-card glass-card" data-index="0">
+          <div class="dua-number">١</div>
+          <p class="dua-arabic">تَقَبَّلَ اللَّهُ مِنَّا وَمِنكُمْ</p>
+          <div class="dua-divider"></div>
+          <p class="dua-translation">May Allah accept from us and from you.</p>
+          <div class="card-glow"></div>
+        </div>
+        <div class="dua-card glass-card" data-index="1">
+          <div class="dua-number">٢</div>
+          <p class="dua-arabic">اللَّهُمَّ اجْعَلْ هَذَا الْعِيدَ سَعِيدًا وَمُبَارَكًا</p>
+          <div class="dua-divider"></div>
+          <p class="dua-translation">O Allah, make this Eid joyful and blessed.</p>
+          <div class="card-glow"></div>
+        </div>
+        <div class="dua-card glass-card" data-index="2">
+          <div class="dua-number">٣</div>
+          <p class="dua-arabic">عِيدُكُمْ مُبَارَكٌ وَكُلُّ عَامٍ وَأَنْتُمْ بِخَيْر</p>
+          <div class="dua-divider"></div>
+          <p class="dua-translation">Blessed Eid to you and may you be well every year.</p>
+          <div class="card-glow"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── Ornamental Arch Divider ─── -->
+    <div class="section-divider" aria-hidden="true">
+      <svg viewBox="0 0 600 60" preserveAspectRatio="none" class="arch-divider-svg">
+        <path d="M0,58 L200,58 Q300,2 400,58 L600,58" fill="none" stroke="url(#archGrad)" stroke-width="1.5" />
+        <circle cx="300" cy="8" r="4" fill="url(#goldCapGrad)" filter="url(#glow)" />
+      </svg>
+    </div>
+
+    <!-- ─── FAMILY MESSAGE SECTION ─── -->
+    <section id="family-message">
+      <div class="section-header">
+        <span class="section-icon">
+          <svg viewBox="0 0 100 100" style="width:50px;height:50px;" class="medallion-svg-asset">
+            <path d="M50,30 C35,10 15,15 15,40 C15,65 45,80 50,88 C55,80 85,65 85,40 C85,15 65,10 50,30 Z" fill="none" stroke="url(#goldCapGrad)" stroke-width="2.5" />
+          </svg>
+        </span>
+        <h2 class="section-title">A Message From The Heart</h2>
+        <p class="section-subtitle">With love, from Shazin to his beloved family</p>
+      </div>
+      <div class="message-card glass-card" id="message-card">
+        <div class="message-corner tl">✦</div>
+        <div class="message-corner tr">✦</div>
+        <div class="message-corner bl">✦</div>
+        <div class="message-corner br">✦</div>
+        <div class="message-breathing-glow"></div>
+        <div class="message-icon">
+          <svg viewBox="0 0 100 100" style="width:60px;height:60px;filter:drop-shadow(0 0 10px rgba(212,168,67,0.4));">
+            <rect x="15" y="25" width="70" height="50" rx="4" fill="none" stroke="url(#goldCapGrad)" stroke-width="2" />
+            <path d="M15,25 L50,55 L85,25" fill="none" stroke="url(#goldCapGrad)" stroke-width="2" />
+            <path d="M30,55 L15,75 M70,55 L85,75" stroke="url(#goldCapGrad)" stroke-width="1.5" />
+          </svg>
+        </div>
+        <p class="message-text" id="typewriter-text"></p>
+        <div class="message-signature">
+          <span class="signature-line"></span>
+          <span class="signature-name">With love, Shazin ☽</span>
+        </div>
+        <div class="card-glow"></div>
+      </div>
+    </section>
+
+    <!-- ─── Ornamental Arch Divider ─── -->
+    <div class="section-divider" aria-hidden="true">
+      <svg viewBox="0 0 600 60" preserveAspectRatio="none" class="arch-divider-svg">
+        <path d="M0,58 L200,58 Q300,2 400,58 L600,58" fill="none" stroke="url(#archGrad)" stroke-width="1.5" />
+        <circle cx="300" cy="8" r="4" fill="url(#goldCapGrad)" filter="url(#glow)" />
+      </svg>
+    </div>
+
+    <!-- ─── BLESSINGS SECTION ─── -->
+    <section id="blessings-section">
+      <div class="section-header">
+        <span class="section-icon">
+          <svg viewBox="0 0 100 100" class="medallion-svg-asset" style="width:50px;height:50px;"><use href="#prayer-hands"/></svg>
+        </span>
+        <h2 class="section-title">Open More Blessings</h2>
+        <p class="section-subtitle">Tap the button to reveal additional prayers</p>
+      </div>
+      <button id="open-blessings-btn" class="blessing-btn">
+        <span class="btn-pulse-ring"></span>
+        <span class="btn-icon">
+          <svg viewBox="0 0 100 100" style="width:24px;height:24px;display:inline-block;vertical-align:middle;"><use href="#prayer-hands"/></svg>
+        </span>
+        <span class="btn-text">Open Blessings</span>
+        <span class="btn-shimmer"></span>
+      </button>
+      <div id="extra-blessings" class="extra-blessings hidden">
+        <div class="blessing-card glass-card">
+          <p class="blessing-arabic">رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ</p>
+          <p class="blessing-translation">Our Lord, give us good in this world and good in the Hereafter, and protect us from the punishment of the Fire.</p>
+          <div class="card-glow"></div>
+        </div>
+        <div class="blessing-card glass-card">
+          <p class="blessing-arabic">اللَّهُمَّ إِنَّكَ عَفُوٌّ تُحِبُّ الْعَفْوَ فَاعْفُ عَنِّي</p>
+          <p class="blessing-translation">O Allah, You are Forgiving and love forgiveness, so forgive me.</p>
+          <div class="card-glow"></div>
+        </div>
+        <div class="blessing-card glass-card">
+          <p class="blessing-arabic">اللَّهُمَّ بَارِكْ لَنَا فِي أَهْلِنَا وَأَوْلَادِنَا</p>
+          <p class="blessing-translation">O Allah, bless us in our family and our children.</p>
+          <div class="card-glow"></div>
+        </div>
+        <div class="blessing-card glass-card">
+          <p class="blessing-arabic">رَبِّ اجْعَلْنِي مُقِيمَ الصَّلَاةِ وَمِن ذُرِّيَّتِي</p>
+          <p class="blessing-translation">My Lord, make me an establisher of prayer, and from my descendants.</p>
+          <div class="card-glow"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── FOOTER ─── -->
+    <footer id="site-footer">
+      <div class="footer-constellation" id="footer-constellation"></div>
+      <div class="footer-moon">
+        <div class="moon-glow footer-moon-glow"></div>
+        <svg viewBox="0 0 100 100" class="moon-svg-asset" style="width:60px;height:60px;" aria-hidden="true">
+          <path d="M72,22 A40,40 0 1,0 72,78 A32,32 0 1,1 72,22 Z" fill="url(#moonGradIntro)" filter="url(#glow)" />
+        </svg>
+      </div>
+      <div class="footer-stars">
+        <svg viewBox="0 0 40 40" class="footer-star-svg"><use href="#sparkle-star"/></svg>
+        <svg viewBox="0 0 40 40" class="footer-star-svg small"><use href="#sparkle-star"/></svg>
+        <svg viewBox="0 0 40 40" class="footer-star-svg"><use href="#sparkle-star"/></svg>
+        <svg viewBox="0 0 40 40" class="footer-star-svg small"><use href="#sparkle-star"/></svg>
+        <svg viewBox="0 0 40 40" class="footer-star-svg"><use href="#sparkle-star"/></svg>
+      </div>
+      <p class="footer-message">
+        May Allah fill your hearts with <span class="arabic-inline">نور</span> (light), peace, and endless happiness.
+      </p>
+      <div class="footer-divider">
+        <svg viewBox="0 0 100 100" style="width:40px;height:40px;" class="medallion-svg-asset">
+          <circle cx="50" cy="50" r="30" fill="none" stroke="url(#goldCapGrad)" stroke-width="1.5" />
+          <path d="M60,40 A15,15 0 1,0 60,60 A12,12 0 1,1 60,40 Z" fill="url(#goldCapGrad)" />
+        </svg>
+      </div>
+      <p class="footer-credit">Made with love by Shazin ✨</p>
+      <p class="footer-year">Eid 2026</p>
+    </footer>
+
+  </main>
+
+  <!-- Cursor particle trail canvas -->
+  <canvas id="trail-canvas"></canvas>
+
+  <!-- Audio -->
+  <audio id="bg-music" loop preload="auto">
+    <source src="https://cdn.pixabay.com/audio/2024/11/04/audio_4956b04edd.mp3" type="audio/mpeg" />
+  </audio>
+  <button id="music-toggle" aria-label="Toggle Music" title="Toggle Music">
+    <span id="music-icon">🔇</span>
+  </button>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
